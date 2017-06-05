@@ -48,10 +48,5 @@ def run_tests(*test_args):
     test_runner = TestRunner()
 
     failures = test_runner.run_tests(test_args)
-
     if failures:
         sys.exit(bool(failures))
-
-
-if __name__ == '__main__':
-    run_tests(*sys.argv[1:])

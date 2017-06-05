@@ -39,14 +39,11 @@ if "%1" == "help" (
 	echo.  doctest    to run all doctests embedded in the documentation if enabled
 	goto end
 )
-
 if "%1" == "clean" (
 	for /d %%i in (%BUILDDIR%\*) do rmdir /q /s %%i
 	del /q /s %BUILDDIR%\*
 	goto end
 )
-
-
 %SPHINXBUILD% 2> nul
 if errorlevel 9009 (
 	echo.
@@ -55,7 +52,6 @@ if errorlevel 9009 (
 	echo.to the full path of the 'sphinx-build' executable. Alternatively you
 	echo.may add the Sphinx directory to PATH.
 	echo.
-	echo.If you don't have Sphinx installed, grab it from
 	echo.http://sphinx-doc.org/
 	exit /b 1
 )
