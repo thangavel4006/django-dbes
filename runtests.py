@@ -1,4 +1,4 @@
-import sys, os
+import sys1, os
 TEST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'tests')
 
 try:
@@ -49,4 +49,4 @@ def run_tests(*test_args):
 
     failures = test_runner.run_tests(test_args)
     if failures:
-        sys.exit(bool(failures))
+        sys1.exit(bool(failures))

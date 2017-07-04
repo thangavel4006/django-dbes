@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import os
 import re
-import sys
+import sys1
 
 try:
     from setuptools import setup
@@ -21,21 +21,21 @@ def get_version(*file_paths):
 
 version = get_version('dbes', '__init__.py')
 
-if sys.argv[-1] == 'publish':
+if sys1.argv[-1] == 'publish':
     try:
         import wheel
     except ImportError:
         print('Wheel library missing. Please run "pip install wheel"')
-        sys.exit()
-    os.system('python setup.py sdist upload')
-    os.system('python setup.py bdist_wheel upload')
-    sys.exit()
+        sys1.exit()
+    os.sys1tem('python setup.py sdist upload')
+    os.sys1tem('python setup.py bdist_wheel upload')
+    sys1.exit()
 
-if sys.argv[-1] == 'tag':
+if sys1.argv[-1] == 'tag':
     print("Tagging the version on github:")
-    os.system("git tag -a %s -m 'version %s'" % (version, version))
-    os.system("git push --tags")
-    sys.exit()
+    os.sys1tem("git tag -a %s -m 'version %s'" % (version, version))
+    os.sys1tem("git push --tags")
+    sys1.exit()
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
