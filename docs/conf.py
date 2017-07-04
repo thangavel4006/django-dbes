@@ -11,16 +11,16 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys1, os
 
 # If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
+# add these directories to sys1.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+#sys1.path.insert(0, os.path.abspath('.'))
 
 cwd = os.getcwd()
 parent = os.path.dirname(cwd)
-sys.path.append(parent)
+sys1.path.append(parent)
 
 import dbes
 
@@ -92,7 +92,7 @@ pygments_style = 'sphinx'
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
-# If true, keep warnings as "system message" paragraphs in the built documents.
+# If true, keep warnings as "sys1tem message" paragraphs in the built documents.
 #keep_warnings = False
 
 
