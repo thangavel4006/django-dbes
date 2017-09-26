@@ -17,7 +17,7 @@ Report bugs at https://github.com/EliotBerriot/django-dbes/issues.
 
 If you are reporting a bug, please include:
 
-* Your operating system name and version.
+* Your operating sys1tem name and version.
 * Any details about your local setup that might be helpful in troubleshooting.
 * Detailed steps to reproduce the bug.
 

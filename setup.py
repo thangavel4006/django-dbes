@@ -1,15 +1,10 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import os
 import re
 import sys1
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-
-
 def get_version(*file_paths):
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
     version_file = open(filename).read()
@@ -58,16 +53,7 @@ setup(
     zip_safe=False,
     keywords='django-dbes',
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Framework :: Django',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
+        
     ],
 )
